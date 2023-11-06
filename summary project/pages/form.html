@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טופס</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+  <div class="flex">
+    <form id="survey-form">
+        <h1>טופס הרשמה</h1>
+          <div class="form-group">
+            <label id="name-label" for="name">שם</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="הכנס את שמך"
+              required
+            />
+          </div>
+          <div class="form-group">
+              <label id="addres-label" for="name">כתובת</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="הכנס כתובת"
+                required
+              />
+            </div>
+          <div class="form-group">
+            <label id="email-label" for="email">מייל</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="הכנס את המייל שלך"
+              required
+            />
+          </div>
+            <div class="form-group">
+              <label for="phone">טלפון</label> 
+                  <input type="tel" id="phone" name="phone"
+                  class="form-control"
+                  placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" 
+                  required>
+            </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            > מספר אנשים</label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="1"
+            max="99"
+            class="form-control"
+            placeholder="הכנס מספר"
+          />
+        </div>
+        
+        <div class="form-group">
+          <label for="date">תאריך יציאה</label>
+          <input type="date" id="date" name="date"
+          class="form-control">
+          
+        </div>
+       <div class="form-group">
+        <label for="date">תאריך חזרה</label>
+        <input type="date" id="date" name="date"
+        class="form-control">
+        
+       </div>
+
+
+        <div class="form-group">
+          <p> לאן תרצה לטוס</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>בחר יעד</option>
+            <option value="student">ארה"ב</option>
+            <option value="job"> מקסיקו</option>
+            <option value="learner"> קפריסין</option>
+            <option value="preferNo"> איטליה</option>
+            <option value="preferNo">  שוויץ</option>
+            <option value="preferNo"> תאילנד</option>
+            <option value="other"> אחר</option>
+          </select>
+        </div>
+    
+        <div class="form-group">
+          <p>איזה מחלקה תרצה לטוס?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            /> מחלקה ראשונה</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />מחלקת עסקים</label
+          >
+    
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />עם עמך</label
+          >
+        </div>
+    
+        <div class="form-group">
+          <p>
+           מה תרצה להזמין ?
+            
+          </p>
+    
+          <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            /> טיסה</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="back-end-projects"
+              type="checkbox"
+              class="input-checkbox"
+            /> מלון</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="data-visualization"
+              type="checkbox"
+              class="input-checkbox"
+            /> הזמנת רכב</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />ביטוח</label
+          >
+          
+    
+        <div class="form-group">
+          <p> בקשות מיוחדות</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder=" כתוב כאן ..."
+          ></textarea>
+        </div>
+    
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            שלח
+          </button>
+        </div>
+      </form>
+    </div>
+</body>
+</html>

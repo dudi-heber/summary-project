@@ -1,0 +1,194 @@
+ 
+    
+
+ body{
+    background-image: url("../img/flag-1291945_640.jpg");
+    background-size: cover;
+    
+     
+   
+} 
+.grid-container{
+    display: grid;
+    grid-auto-columns: repeat(10,10%) ;
+    grid-auto-rows: minmax(20vh) ;
+    row-gap: 50px;
+    justify-content: center;
+    
+}
+
+.heading{
+    grid-column: span 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(200, 255, 0);
+    font-size: 48px;
+    
+   
+}
+
+.flight{
+    grid-column: 2/7;
+    border: 1px solid rebeccapurple;
+    display:flex;
+    justify-content: center;
+    border-radius: 20px;
+    display: grid;
+    grid-auto-columns:2fr 1fr 1fr;
+    
+
+}
+
+.vikipedia{
+    grid-column: 10/11;
+    /* margin-right: 250px; */
+    
+     
+    
+}
+
+.hotel{
+    grid-column:  span 8;
+    display:flex;
+}
+
+.imgg{
+    grid-column: 10/11;
+ 
+  
+}
+
+.rent-car{
+    grid-column:  span 8;
+    display:flex;
+    
+}
+
+.insurance{
+    grid-column: span 8;
+    display:flex;
+}
+
+.recommendations{
+    grid-column: span 8; 
+    display:flex;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    /* background-color: lightblue;   */
+    margin-top: 100px;
+  }
+.order {
+    height:  10vh;
+    width: 50%;
+    border: solid black;
+    text-align: center;
+    border-radius: 30px;
+     
+}
+
+.contact {
+    height:  10vh;
+    width: 50%;
+    border: solid black;
+    text-align: center;
+    border-radius: 30px;
+     
+  }
+    
+  
+  table{
+    border-collapse: collapse;
+    /* border: 1px solid red; */
+    background-color: antiquewhite;
+    
+}
+
+table td{
+    /* border: 1px solid rgb(181, 58, 109); */
+    padding: 4px 8px;
+    text-align: center;
+    vertical-align: center;
+    font-size: 24px;
+    color: rgb(112, 112, 197);
+    font-weight: bold;
+   
+}
+table th{
+    background-color: aquamarine;
+    /* border-left: 1px solid rebeccapurple; */
+    color:  black;
+    padding: 4px 44px;
+    font-size: 26px;
+} 
+
+table,td,th{
+    /* border: 2px double black; */
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 850px) {
+    /* .grid-container{
+        display: grid;
+        grid-auto-columns: repeat(10,10%) ;
+        grid-auto-rows: minmax(20vh) ;
+        row-gap: 50px;
+        justify-content: center;
+        
+    } */
+    body{
+      
+       background-attachment: fixed;
+    } 
+
+    .item{
+        grid-column: span 10;
+    }
+    .order{
+ 
+    }
+    .contact{
+        margin-top: 5px;
+     justify-content: center;
+     align-items: center;
+    }
+    .footer-container{
+      flex-direction: column;
+      align-items: center;
+      margin-right: 25%;
+       
+      font-size: 2vh;
+      width: 50vh;
+     
+    }
+}
+ /* table {
+    border-left: 1px solid black;
+
+} */
+
+ 
+
+/* .flight-container{
+    display: grid;
+    grid-auto-columns: repeat(4,25%);
+    background-color: blueviolet;
+    
+ 
+}  */
+
+/* .flight-heading{
+    grid-column: span 3;
+    text-align: center;
+
+}
+
+.skayscaner{
+    grid-column: 2/3;
+    align-content: center;
+} */
